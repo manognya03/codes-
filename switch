@@ -1,0 +1,22 @@
+problem:
+Read two numbers and print 1 for addition ,print 2 for substraction.
+
+Source code:
+#include<stdio.h>
+int main(){
+  int a,b;
+  scanf("%d%d",&a,&b);
+  int ch;
+  scanf("%d",&ch);
+  switch(ch)
+  {
+      case 1:
+       printf("%d",a+b);
+      break;
+      case 2:
+       printf("%d",a-b);
+      break;
+      default:
+       printf("invalid");
+  }
+}
