@@ -1,0 +1,26 @@
+problem:
+To find the roots of the given input.
+
+Source code:
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float a,b,c;
+    scanf("%f%f%f",&a,&b,&c);
+    float d= b*b-4*a*c;
+    if(d<0)
+    {
+        printf("Imaginary roots");
+    }
+    else
+        {
+            float r1=(-b+sqrt(b*b-4*a*c))/2*a;
+            float r2=(-b-sqrt(b*b-4*a*c))/2*a;
+            printf("Root 1=%f\n",r1);
+            printf("Root 2=%f\n",r2);
+            
+            
+        }
+}
+    
