@@ -1,0 +1,21 @@
+problem:
+check whether the number is positive or negative or zero.
+
+Source code:
+#include <stdio.h>
+int main() {
+    int b;
+    scanf("%d",&b);
+    if(b<0)
+    {
+        printf("negative number");
+    }
+    else if(b>0)
+    {
+        printf("Positive number");
+    }
+    else 
+    {
+        printf("number is zero");
+    }
+}
