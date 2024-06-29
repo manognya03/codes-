@@ -1,0 +1,57 @@
+problem:
+Given an array of integers, find the first repeating element in it. We need to find the element that occurs more than once .
+Input Format
+You will be given a function with an integer array as arguments.
+
+
+Constraints
+1 < N < 10^5
+1 < a[i] < 10^5
+
+
+Output Format
+You need to return the repeating element from the function.
+
+
+Sample TestCase 1
+Input
+7
+10
+5
+3
+4
+3
+5
+6
+Output
+5
+3
+
+
+
+Source code:
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+        Scanner s=new Scanner(System.in); 
+        int n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        for(int i=0;i<n-1;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(a[i]==a[j])
+                {
+                   
+                    System.out.println(a[i]+" ");
+                     break;
+                }  
+            }  
+        }
+    }
+}
